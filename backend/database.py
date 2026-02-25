@@ -9,4 +9,4 @@ client = MongoClient(MONGO_URI)
 
 db = client["interviewiq"]
 collection = db["evaluations"]
-users_collection = db["users"]
+users_collection = db["users"]  

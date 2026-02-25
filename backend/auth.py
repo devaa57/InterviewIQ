@@ -3,8 +3,12 @@ from jose import jwt
 from argon2 import PasswordHasher
 from argon2.exceptions import VerifyMismatchError
 from jose import JWTError
+import os
+from dotenv import load_dotenv
 
-SECRET_KEY = "supersecretkey123"
+load_dotenv()
+
+SECRET_KEY = os.getenv("SECRET_KEY")
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 60
 
