@@ -13,7 +13,7 @@ function Register() {
 
     try {
       const response = await axios.post(
-        "http://127.0.0.1:8000/register",
+        "https://interviewiq-backend-6sxz.onrender.com/register",
         { email, password }
       )
 

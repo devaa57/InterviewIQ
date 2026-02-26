@@ -19,7 +19,7 @@ function History() {
     const fetchHistory = async () => {
       try {
         const response = await axios.get(
-          "http://127.0.0.1:8000/interview-history",
+          "https://interviewiq-backend-6sxz.onrender.com/interview-history",
           {
             headers: {
               Authorization: `Bearer ${token}`

@@ -30,14 +30,14 @@ function Dashboard() {
     const fetchData = async () => {
       try {
         const analyticsRes = await axios.get(
-          "http://127.0.0.1:8000/analytics",
+          "https://interviewiq-backend-6sxz.onrender.com/analytics",
           {
             headers: { Authorization: `Bearer ${token}` }
           }
         )
 
         const historyRes = await axios.get(
-          "http://127.0.0.1:8000/interview-history",
+          "https://interviewiq-backend-6sxz.onrender.com/interview-history",
           {
             headers: { Authorization: `Bearer ${token}` }
           }

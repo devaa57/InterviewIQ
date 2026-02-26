@@ -29,7 +29,7 @@ function Evaluate() {
 
     try {
       const response = await axios.post(
-        "http://127.0.0.1:8000/generate-questions",
+        "https://interviewiq-backend-6sxz.onrender.com/generate-questions",
         { role, difficulty },
         {
           headers: { Authorization: `Bearer ${token}` }
@@ -59,7 +59,7 @@ function Evaluate() {
 
     try {
       const response = await axios.post(
-        "http://127.0.0.1:8000/evaluate-answer",
+        "https://interviewiq-backend-6sxz.onrender.com/evaluate-answer",
         { question, answer },
         {
           headers: { Authorization: `Bearer ${token}` }
