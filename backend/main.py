@@ -17,7 +17,7 @@ app = FastAPI()
 
 origins = [
     "http://localhost:5173",  # local dev
-    "https://your-vercel-url.vercel.app",  # production
+    "https://interview-iq-eosin.vercel.app",  # production
 ]
 
 app.add_middleware(
